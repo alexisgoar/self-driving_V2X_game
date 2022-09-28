@@ -11,7 +11,8 @@ class PlayerCar(pygame.sprite.Sprite):
 
         self.rect = self.image.get_rect(center = pos)
 
-        self.pos = pygame.math.Vector2(self.rect.center);
+        self.pos = pygame.math.Vector2(self.rect.center)
+        self.z = LAYERS['main']
         self.orientation = pygame.math.Vector2(self.rect.center)
         self.rotation = 90
         self.rotationSpeed = 50
